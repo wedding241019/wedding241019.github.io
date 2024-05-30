@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -90,7 +91,7 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="subtitle">Wedding Invitation</h1>
-            <h2 class="special-font">Hyonggyu & Dasom</h2>
+            <h2 class="special-font">Hyong-gyu & Dasom</h2>
           <h4 class="subtitle tempatwaktu">
               
                 2024.10.19. PM 18:00
@@ -101,8 +102,8 @@
           </div>
           <!-- Start Countdown -->       
           <div>
-  <ul id="hitungmundur" >
-    <li><span class="days">00</span><p class="days_text">Days</p></li>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Days</p></li>
     <li class="separator">:</li>
     <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
     <li class="separator">:</li>
@@ -110,33 +111,27 @@
     <li class="separator">:</li>
     <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
   </ul>
-  <div class="spasi">
-  </div>
-</div>
-<script type="text/javascript">
-  var now = new Date();
-  var day = now.getDate();
-  var month = now.getMonth() + 1;
-  var year = now.getFullYear() + 1;
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '10/19/2024 18:00:00';
 
-  var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-  var harih = '10/19/2024 18:00:00';
-
-  $('#hitungmundur').countdown({
-    date: harih, // Date format: 10/19/2024 18:00:00
-    offset: +7, // Your Timezone Offset
-    day: 'Days',
-    days: 'Days',
-    hour: 'Hours',
-    hours: 'Hours',
-    minute: 'Minutes',
-    minutes: 'Minutes',
-    second: 'Seconds',
-    seconds: 'Seconds'
-  }, function () {
-    alert('Done!');
-  });
-</script>  
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 10/19/2024 18:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Hari',
+                days: 'Hari'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
           <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
@@ -181,11 +176,7 @@
         <div data-aos="fade-up" data-aos-easing="linear">
           <div class="nama-lengkap" >
             초대합니다
-           <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <div data-aos="fade-up" data-aos-easing="linear">
-        
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
             평생을 함께하고 싶은 사람을 만났습니다.
             <br />
             서로의 부족함을 채워주고, 서로의 기쁨을
@@ -414,9 +405,13 @@
       <!-- End RSVP Content -->
     </div>
     <!-- End Main Content -->
- <!-- Begin Footer -->
-    <p class="has-vertically-align" style="font-size: smaller; margin-top: 2em; text-align: center;">2024@ Made by Dasom</p>
-     
+
+     <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
+          <p class="has-vertically-align">2024@ Made by Dasom</p>
+        
     <!-- End Footer -->
 
     <!-- Scripts -->
