@@ -130,8 +130,35 @@
 </head>
 <body>
     <!-- Start Countdown -->       
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .special-font {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5em; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="subtitle">Wedding Invitation</h1>
+            <h2 class="special-font">Hyong-gyu & Dasom</h2>
+            <h4 class="subtitle tempatwaktu">
+                2024.10.19. PM 18:00
+                <br>
+                삼청각 일화당
+            </h4>
+        </div>
+    </div>
     <div>
-        <ul id="hitungmundur">
+        <ul id="hitungmundur" class="has-text-centered">
             <li><span class="days">00</span><p class="days_text">Days</p></li>
             <li class="separator">:</li>
             <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
@@ -141,8 +168,9 @@
             <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
         </ul>
     </div>
-    <!-- End Countdown -->
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#hitungmundur').countdown('2024/10/19 18:00:00', function(event) {
@@ -155,8 +183,6 @@
     </script>
 </body>
 </html>
-
-            
           <!-- End Countdown -->
         </div>
    <!-- End Hero Content-->
