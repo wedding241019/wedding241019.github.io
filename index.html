@@ -320,39 +320,35 @@
          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
             <h1 class="title has-text-centered section-title">포토갤러리</h1>
             
-      <div class="ww-gallery">
-                        <div class="card-columns">
-                            <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 2" class="img-fluid" src="images/pic2.jpeg"/>
-                                </a>
+    <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner rounded-4">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/1280/720?random=1" alt="gambar 1" class="d-block w-100" onclick="util.modal(this)">
                             </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 3" class="img-fluid" src="images/pic3.jpeg"/>
-                                </a>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=2" alt="gambar 2" class="d-block w-100" onclick="util.modal(this)">
                             </div>
-                            <div class="card" data-groups="[&quot;party&quot;,&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 4" class="img-fluid" src="images/pic4.jpeg"/>
-                                </a>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=3" alt="gambar 3" class="d-block w-100" onclick="util.modal(this)">
                             </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 5" class="img-fluid" src="images/pic6.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card"
-                                 data-groups="[&quot;wedding&quot;,&quot;ceremony&quot;,&quot;party&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 6" class="img-fluid" src="images/pic7.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 7" class="img-fluid" src="images/pic5.jpeg"/>
-                                </a>
-                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-one" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-one" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
           </div>
         </div>
