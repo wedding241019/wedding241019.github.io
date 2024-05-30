@@ -90,41 +90,84 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="subtitle">Wedding Invitation</h1>
-            <h2 class="special-font">Hyonggyu & Dasom</h2>
+            <h2 class="special-font">Hyong-gyu & Dasom</h2>
+          <h4 class="subtitle tempatwaktu">
+              
+                2024.10.19. PM 18:00
+                </br>
+                삼청각 일화당
+               
+            </h4>
+          </div>
+          <!-- Start Countdown -->       
             <h4 class="subtitle tempatwaktu">2024.10.19. PM 18:00</h4>
           </br>
               삼청각 일화당
           
-          </div>
-          <div>
-           <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Days</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-            </ul>
-            <div class="spasi"></div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '10/19/2024 18:00:00';
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 10/19/2024 18:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
-              });
-            </script>  
-          </div>
+         <!--Start Countdown -->
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+    <style>
+        #hitungmundur {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            list-style-type: none;
+            padding: 0;
+        }
+        #hitungmundur li {
+            margin: 0 5px;
+            text-align: center;
+        }
+        .separator {
+            font-size: 36px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Countdown -->       
+    <div>
+        <ul id="hitungmundur">
+            <li><span class="days">00</span><p class="days_text">Days</p></li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+        </ul>
+    </div>
+    <!-- End Countdown -->
+    
+    <script>
+        $(document).ready(function() {
+            $('#hitungmundur').countdown('2024/10/19 18:00:00', function(event) {
+                $(this).find('.days').text(event.strftime('%D'));
+                $(this).find('.hours').text(event.strftime('%H'));
+                $(this).find('.minutes').text(event.strftime('%M'));
+                $(this).find('.seconds').text(event.strftime('%S'));
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+            
+          <!-- End Countdown -->
         </div>
+   <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
         <div class="hero-foot ">
           <div class="hero-foot--wrapper">
             <div class="columns">
