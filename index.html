@@ -83,30 +83,20 @@
             </h4>
           </div>
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Days</p></li>
+            <ul id="countdown">
+              <li><span class="days">00</span><p class="days_text">일</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+              <li><span class="hours">00</span><p class="hours_text">시간</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">분</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">초</p></li>
             </ul>
             <div class="spasi"></div>
             <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '10/19/2024 18:00:00';
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 10/19/2024 18:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
+              $(document).ready(function() {
+                var eventDate = new Date('2024-10-19T18:00:00');
+                $('#countdown').countdown({until: eventDate, format: 'DHMS', labels: ['년', '개월', '주', '일', '시간', '분', '초'], labels1: ['년', '개월', '주', '일', '시간', '분', '초']});
               });
             </script>  
           </div>
