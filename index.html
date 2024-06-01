@@ -1,7 +1,9 @@
+글씨체를 고딕체로 변경하고자 하는 부분에 CSS를 추가하겠습니다. 다음은 수정된 HTML 코드입니다:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2828f7885a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
@@ -31,293 +34,253 @@
     </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
-  body {
-    overflow-x: hidden; /* 가로 스크롤을 숨김 */
-  }
-</style>
-  </head>
-
-  <body>
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
-      </div>
-    </div>
-    <div class="header-wrapper" id="home">
-      <section class="hero is-large">
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div id="mobile-nav" class="초대합니다">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#시간">
-                  시간
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#오시는길">
-                  오시는길
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#포토갤러리">
-                  포토갤러리
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#마음전하실곳">
-                  마음전하실곳
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .special-font {
-            font-family: 'Dancing Script', cursive;
-            font-size: 5em; /* Adjust the font size as needed */
-        }
+      body {
+        overflow-x: hidden; /* 가로 스크롤을 숨김 */
+      }
+      .gothic-font {
+        font-family: 'Noto Sans KR', sans-serif; /* 고딕체 적용 */
+      }
     </style>
 </head>
+
 <body>
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="subtitle">Wedding Invitation</h1>
-            <h2 class="special-font">Hyonggyu & Dasom</h2>
-          <h4 class="subtitle tempatwaktu">
-              
-                2024.10.19. PM 18:00
-                </br>
-                 삼청각 일화당
-              
-            </h4>
-          </div>
-         <!-- Start Countdown -->       
-          <div>
-  <ul id="hitungmundur" >
-    <li><span class="days">00</span><p class="days_text">Days</p></li>
-    <li class="separator">:</li>
-    <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-    <li class="separator">:</li>
-    <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-    <li class="separator">:</li>
-    <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-  </ul>
-  <div class="spasi">
-  </div>
-</div>
-<script type="text/javascript">
-  var now = new Date();
-  var day = now.getDate();
-  var month = now.getMonth() + 1;
-  var year = now.getFullYear() + 1;
-
-  var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-  var harih = '10/19/2024 16:00:00';
-
-  $('#hitungmundur').countdown({
-    date: harih, // Date format: 10/19/2024 16:00:00
-    offset: +7, // Your Timezone Offset
-    day: 'Days',
-    days: 'Days',
-    hour: 'Hours',
-    hours: 'Hours',
-    minute: 'Minutes',
-    minutes: 'Minutes',
-    second: 'Seconds',
-    seconds: 'Seconds'
-  }, function () {
-    alert('Done!');
-  });
-</script>  
-          <!-- End Countdown -->
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="image/favicon.png" alt="Flower" />
         </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">초대합니다</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">시간</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">오시는길</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-sherly-daeng">포토갤러리</a>
-                  </li>
-
-                  <li>
-                    <a href="#rsvp">마음전하실곳</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
     </div>
-    <!-- End Header -->
-
-<!-- Begin Main Content -->
-    <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="nama-lengkap">
-    초대합니다
-    </p>
+    <div class="header-wrapper" id="home">
+        <section class="hero is-large">
+            <nav class="navbar is-transparent is-hidden-desktop">
+                <div class="navbar-brand is-fixed-top">
+                    <div class="navbar-burger burger" data-target="mobile-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="mobile-nav" class="초대합니다">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#시간">시간</a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#오시는길">오시는길</a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#포토갤러리">포토갤러리</a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#마음전하실곳">마음전하실곳</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Wedding Invitation</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+                <style>
+                    .special-font {
+                        font-family: 'Dancing Script', cursive;
+                        font-size: 5em; /* Adjust the font size as needed */
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="subtitle">Wedding Invitation</h1>
+                        <h2 class="special-font">Hyonggyu & Dasom</h2>
+                        <h4 class="subtitle tempatwaktu">
+                            2024.10.19. PM 18:00
+                            </br> 삼청각 일화당
+                        </h4>
+                    </div>
+                    <!-- Start Countdown -->
+                    <div>
+                        <ul id="hitungmundur">
+                            <li><span class="days">00</span><p class="days_text">Days</p></li>
+                            <li class="separator">:</li>
+                            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+                            <li class="separator">:</li>
+                            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+                            <li class="separator">:</li>
+                            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+                        </ul>
+                        <div class="spasi"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var now = new Date();
+                        var day = now.getDate();
+                        var month = now.getMonth() + 1;
+                        var year = now.getFullYear() + 1;
+                        var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+                        var harih = '10/19/2024 16:00:00';
+                        $('#hitungmundur').countdown({
+                            date: harih, // Date format: 10/19/2024 16:00:00
+                            offset: +7, // Your Timezone Offset
+                            day: 'Days',
+                            days: 'Days',
+                            hour: 'Hours',
+                            hours: 'Hours',
+                            minute: 'Minutes',
+                            minutes: 'Minutes',
+                            second: 'Seconds',
+                            seconds: 'Seconds'
+                        }, function () {
+                            alert('Done!');
+                        });
+                    </script>
+                    <!-- End Countdown -->
+                </div>
+                <!-- End Hero Content-->
+                <!-- Begin Hero Menu -->
+                <div class="hero-foot ">
+                    <div class="hero-foot--wrapper">
+                        <div class="columns">
+                            <div class="column is-12 hero-menu-desktop has-text-centered">
+                                <ul>
+                                    <li class="is-active">
+                                        <a href="#home">초대합니다</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Waktu">시간</a>
+                                    </li>
+                                    <li>
+                                        <a href="#lokasi">오시는길</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tentang-sherly-daeng">포토갤러리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#rsvp">마음전하실곳</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Hero Menu -->
+            </section>
         </div>
+        <!-- End Header -->
+
+        <!-- Begin Main Content -->
         <div class="main-content">
-            <span class="space40px"></span>
-        <span class="space40px"></span>
-           <p class="waktu is-larger has-text-centered">
-        평생을 함께하고 싶은 사람을 만났습니다.
-        <br />
-        서로의 부족함을 채워주고, 서로의 기쁨을
-        <br />
-        두 배로 만들어 주는 사람입니다.
-        <br />
-        이제 저희는 그 사람과 함께
-        <br />
-        새로운 시작을 하려 합니다.
-        <br /><br /><br /><br /><br /> <!-- Add more <br> tags for extra spacing -->
-        신랑 <strong><span style="font-size: 1.5em;">강형규</span></strong>
-        <br /> 
-        강태수 · 오점남 차남
-             <br /><br />
+            <!-- Begin regular-section-->
+            <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+                <div data-aos="fade-up" data-aos-easing="linear">
+                    <div class="nama-lengkap">초대합니다</div>
+                </div>
+                <div class="main-content">
+                    <span class="space40px"></span>
+                    <span class="space40px"></span>
+                    <p class="waktu is-larger has-text-centered">
+                        평생을 함께하고 싶은 사람을 만났습니다.
+                        <br />
+                        서로의 부족함을 채워주고, 서로의 기쁨을
+                        <br />
+                        두 배로 만들어 주는 사람입니다.
+                        <br />
+                        이제 저희는 그 사람과 함께
+                        <br />
+                        새로운 시작을 하려 합니다.
+                        <br /><br /><br /><
+
+br /><br /> <!-- Add more <br> tags for extra spacing -->
+                        신랑 <strong><span style="font-size: 1.5em;">강형규</span></strong>
+                        <br /> 강태수 · 오점남 차남
+                        <br /><br />
+                        <span class="space40px"></span>
+                        <p class="waktu is-larger has-text-centered">
+                            신부 <strong><span style="font-size: 1.5em;">한다솜</span></strong>
+                            <br> 한현수 · 최은아 장녀
+                        </p>
+                    </p>
+                </div>
                 <span class="space40px"></span>
-                 <p class="waktu is-larger has-text-centered">
-                신부 <strong><span style="font-size: 1.5em;">한다솜</span></strong>
-                  <br>
-                한현수 · 최은아 장녀
-              
+                <div data-aos="fade-up" data-aos-easing="linear">
+                    <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                </div>
+                <span class="space40px"></span>
+                <span class="space40px"></span>
+            </section>
+            <!-- End regular-section-->
 
+            <!-- Begin Waktu Section -->
+            <section class="section-dark" id="Waktu">
+                <div class="container">
+                    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                        <h1 class="title has-text-centered section-title">시간</h1>
+                    </div>
+                    <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <p class="is-larger has-text-centered">
+                                <div class="waktu tanggal-hari has-text-centered">토요일</div>
+                                <div class="waktu tanggal-bulan has-text-centered">2024년 10월</div>
+                                <div class="waktu tanggal-hari has-text-centered" style="font-weight: bold; font-size: 2em;">19일</div>
+                            </p>
+                        </div>
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <p class="waktu is-larger has-text-centered">삼청각 일화당</p>
+                        </div>
+                        <div class="column is-4 has-vertically-aligned-content">
+                            <h1 class="waktu is-larger has-text-centered"><strong>18:00 PM</strong></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="space40px"></div>
+                <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDN2ZzU0ODNqa3JzOThsYTFmaHZzaTRtbzcgZHNoMTIxNzdAbQ&tmsrc=dsh12177%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+                        <i class="far fa-calendar-plus"></i>
+                        &nbsp;&nbsp;구글캘린더 일정추가
+                    </a>
+                </div>
+            </section>
+            <!-- End Waktu Content -->
 
+            <!-- Begin Lokasi Section -->
+            <section class="section-darker" id="lokasi">
+                <div class="container">
+                    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                        <h1 class="title has-text-centered section-title">오시는길</h1>
+                        <p class="tempat is-larger has-text-centered gothic-font">
+                            <strong>서울 성북구 대사관로 3</strong>
+                            <br> 성북동 330-115
+                            <br> 대중교통이용이 불편하오니
+                            <br> 자차이용을 권장드립니다.
+                            <br> (주차무료)
+                        </p>
+                    </div>
+                    <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                        <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:350px; height:632px; color:#333; position:relative; margin: 0 auto;">
+                            <div style="height: 600px;">
+                                <a href="https://map.kakao.com/?urlX=496508.0&amp;urlY=1138273.0&amp;itemId=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;srcid=9103357&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/6ed3fc567b47847cd208d8f08b472648af8b04289e789f3b6df30565075aafe3" width="348px" height="598px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <a href="https://map.kakao.com" target="_blank" style="float: left;">
+                                    <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px">
+                                </a>
+                                <div style="float: right; position: relative; top: 1px; font-size: 11px;">
+                                    <a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=9103357&amp;confirmid=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a>
+                                    <span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
+                                    <a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;eX=496508.0&amp;eY=1138273.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a>
+                                    <span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
+                                    <a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=9103357&amp;itemId=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;urlX=496508.0&amp;urlY=1138273.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Lokasi Content -->
 
-        </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
-
-      <!-- Begin Waktu Section -->
-<section class="section-dark" id="Waktu">
-  <div class="container">
-
-    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-      <h1 class="title has-text-centered section-title">시간</h1>
-    </div>
-    <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-      <div class="column is-4 has-vertically-aligned-content">
-
-        <p class="is-larger has-text-centered">
-          <div class="waktu tanggal-hari has-text-centered">토요일</div> 
-          <div class="waktu tanggal-bulan has-text-centered">2024년 10월</div>
-        <div class="waktu tanggal-hari has-text-centered" style="font-weight: bold; font-size: 2em;">19일</div>
-        </p>
-
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                삼청각 일화당
-              </p>
-            
-            </div>
-
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                <strong>18:00 PM</strong>
-              </h1>
-              
-              
-            </div>
-
-          </div>
-        </div>
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDN2ZzU0ODNqa3JzOThsYTFmaHZzaTRtbzcgZHNoMTIxNzdAbQ&tmsrc=dsh12177%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;구글캘린더 일정추가
-          </a>
-        </div>
-      </section>
-      <!-- End Waktu Content -->
-
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">오시는길</h1>
-            <p class="tempat is-larger has-text-centered">
-             <strong>서울 성북구 대사관로 3</strong>
-              <br>
-             성북동 330-115
-              <br>
-             대중교통이용이 불편하오니 
-              <br>
-              자차이용을 권장드립니다.
-               <br>
-              (주차무료)
-            </p>
-          </div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-   <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:350px; height:632px; color:#333; position:relative; margin: 0 auto;">
-  <div style="height: 600px;">
-    <a href="https://map.kakao.com/?urlX=496508.0&amp;urlY=1138273.0&amp;itemId=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;srcid=9103357&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-      <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/6ed3fc567b47847cd208d8f08b472648af8b04289e789f3b6df30565075aafe3" width="348px" height="598px" style="border:1px solid #ccc;">
-    </a>
-  </div>
-  <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
-    <a href="https://map.kakao.com" target="_blank" style="float: left;">
-      <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px">
-    </a>
-    <div style="float: right; position: relative; top: 1px; font-size: 11px;">
-      <a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=9103357&amp;confirmid=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a>
-      <span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
-      <a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;eX=496508.0&amp;eY=1138273.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a>
-      <span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
-      <a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=9103357&amp;itemId=9103357&amp;q=%EC%82%BC%EC%B2%AD%EA%B0%81&amp;urlX=496508.0&amp;urlY=1138273.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a>
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
-
-      <!-- End Lokasi Content -->
-
-          
- <!-- Begin Tentang Sherly and Daeng -->
+                <!-- Begin Tentang Sherly and Daeng -->
                 <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
                     <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
                         <h1 class="title has-text-centered section-title">포토갤러리</h1>
@@ -345,7 +308,9 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="image/4_Hollywood_facing_crop.jpg" alt="Photo 1"></div>
                             <div class="swiper-slide"><img src="image/6_Beverly_crop.jpg" alt="Photo 2"></div>
-                            <div class="swiper-slide"><img src="image/9_Sea_hand_crop.jpg" alt="Photo 3"></div>
+                            <div class="swiper-slide"><img src="image/9_Sea
+
+_hand_crop.jpg" alt="Photo 3"></div>
                             <div class="swiper-slide"><img src="image/10_Sea_Kiss_crop.jpg" alt="Photo 4"></div>
                         </div>
                         <!-- Add Pagination -->
@@ -367,88 +332,68 @@
                 </section>
                 <!-- End Tentang Sherly dan Daeng -->
 
-    <!-- Begin RSVP Content -->
-     <section class="section-dark contact" id="rsvp">
-  <div class="container">
-    <div class="columns is-multiline">          
-      <div class="column is-12 prolog">
-        <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">마음 전하실 곳</h1>
-        <div class="main-content">
-          <span class="space40px"></span>
-          <span class="space40px"></span>
-          <p class="waktu is-larger has-text-centered">
-            <strong>신랑측</strong>
-            <br />
-            <span>강형규</span> <span style="font-size: 0.7em;">신한은행 123-24-192748</span>
-            <br />
-            <span>강태수</span> <span style="font-size: 0.7em;">우리은행 123-193-23394</span>
-            <br />
-            <span>오점남</span> <span style="font-size: 0.7em;">국민은행 123-592-192948</span>
-            <br /><br /><br />
-            <strong>신부측</strong>
-            <br />
-            <span>한다솜</span> <span style="font-size: 0.7em;">우리은행 1002-948-018440</span>
-            <br />
-            <span>한현수</span> <span style="font-size: 0.7em;">기업은행 123-582-29189</span>
-            <br />
-            <span>최은아</span> <span style="font-size: 0.7em;">기업은행 930-192-192802</span>
-          </p>
+                <!-- Begin RSVP Content -->
+                <section class="section-dark contact" id="rsvp">
+                    <div class="container">
+                        <div class="columns is-multiline">
+                            <div class="column is-12 prolog">
+                                <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">마음 전하실 곳</h1>
+                                <div class="main-content">
+                                    <span class="space40px"></span>
+                                    <span class="space40px"></span>
+                                    <p class="waktu is-larger has-text-centered">
+                                        <strong>신랑측</strong>
+                                        <br />
+                                        <span>강형규</span> <span style="font-size: 0.7em;">신한은행 123-24-192748</span>
+                                        <br />
+                                        <span>강태수</span> <span style="font-size: 0.7em;">우리은행 123-193-23394</span>
+                                        <br />
+                                        <span>오점남</span> <span style="font-size: 0.7em;">국민은행 123-592-192948</span>
+                                        <br /><br /><br />
+                                        <strong>신부측</strong>
+                                        <br />
+                                        <span>한다솜</span> <span style="font-size: 0.7em;">우리은행 1002-948-018440</span>
+                                        <br />
+                                        <span>한현수</span> <span style="font-size: 0.7em;">기업은행 123-582-29189</span>
+                                        <br />
+                                        <span>최은아</span> <span style="font-size: 0.7em;">기업은행 930-192-192802</span>
+                                    </p>
+                                    <div class="main-content">
+                                        <span class="space40px"></span>
+                                        <span class="space40px"></span>
+                                        <p class="waktu is-larger has-text-centered" style="font-size: 1.1em;">
+                                            꼭 참석하시어
+                                            <br> 우리 두 부부의 앞날을
+                                            <br> 축복해 주시면 감사하겠습니다.
+                                            <br>
+                                            <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End RSVP Content -->
+                </div>
+                <!-- End Main Content -->
 
+                <!-- Begin Footer -->
+                <p class="has-vertically-align" style="font-size: smaller; margin-top: 2em; text-align: center;">@2024 Made by Dasom</p>
+                <!-- End Footer -->
 
+                <!-- Scripts -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="js/menikah.js"></script>
+                <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+                <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        easing: "ease-out",
+                        duration: 800,
+                    });
+                </script>
+            </body>
+        </html>
+```
 
-                
-     
-          
-             <div class="main-content">
-            <span class="space40px"></span>
-        <span class="space40px"></span>
-           <p class="waktu is-larger has-text-centered" style="font-size: 1.2em;">
-                꼭 참석하시어 
-                <br>
-                우리 두 부부의 앞날을
-                <br>
-                축복해 주시면 감사하겠습니다.
-                 <br>
-  
-
-              
-     
-            
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-             
-               
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section>
-      <!-- End RSVP Content -->
-    </div>
-    <!-- End Main Content -->
-
-   <!-- Begin Footer -->
-    <p class="has-vertically-align" style="font-size: smaller; margin-top: 2em; text-align: center;">@2024 Made by Dasom</p>
-     
-    <!-- End Footer -->
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-  </body>
-</html>
-
-
-        
+이제 "오시는길" 섹션의 텍스트가 고딕체(Noto Sans KR)로 변경되었습니다. 추가로 "꼭 참석하시어 우리 두 부부의 앞날을 축복해 주시면 감사하겠습니다"의 글씨 크기도 1.1em으로 조정되었습니다.
