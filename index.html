@@ -55,6 +55,9 @@
         background-size: cover;
         background-position: center;
       }
+      .nama-lengkap {
+        font-size: 1.25em; /* Adjust font size to half of the current size */
+      }
     </style>
   </head>
 
@@ -208,8 +211,7 @@
         <div data-aos="fade-up" data-aos-easing="linear">
         <div class="nama-lengkap">
     초대합니다
-    </p>
-        </div>
+    </div> <!-- Note: Changed closing tag from </p> to </div> to match the opening tag -->
         <div class="main-content">
             <span class="space40px"></span>
         <span class="space40px"></span>
@@ -355,10 +357,14 @@
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
-                            background: #fff;
+                            background: none; /* Remove white background */
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                        }
+                        .swiper-slide img {
+                            width: 75%; /* Adjust image size */
+                            margin: 0; /* Remove margin */
                         }
                     </style>
 
