@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gowun+Dodum&family=Molengo&family=PT+Serif+Caption:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bree+Serif&family=Crete+Round:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Gowun+Dodum&family=Molengo&family=Oswald:wght@200..700&family=PT+Serif+Caption:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2828f7885a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
@@ -40,8 +40,8 @@
       .gowun-font {
         font-family: 'Gowun Dodum', sans-serif; /* Add this class for font family */
       }
-      .pt-serif-font {
-        font-family: 'PT Serif Caption', sans-serif; /* Add this class for PT Serif Caption font */
+      .roboto-slab-font {
+        font-family: 'Roboto Slab', sans-serif; /* Add this class for Roboto Slab font */
         font-size: 4.5em; /* Set the font size */
       }
       .small-font {
@@ -56,7 +56,11 @@
         background-position: center;
       }
       .swiper-slide img {
-        width: 100%; /* Reduce image size to 100% */
+        width: 75%; /* Reduce image size to 75% */
+        margin: 0 auto; /* Center the images */
+      }
+      .swiper-slide {
+        background: none; /* Remove the white background */
       }
     </style>
   </head>
@@ -120,7 +124,7 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="subtitle">Wedding Invitation</h1>
-            <h2 class="pt-serif-font">Hyonggyu & Dasom</h2> <!-- Apply PT Serif Caption font here -->
+            <h2 class="roboto-slab-font">Hyonggyu & Dasom</h2> <!-- Apply Roboto Slab font here -->
           <h4 class="subtitle tempatwaktu">
               
                 2024.10.19. PM 18:00
@@ -358,22 +362,23 @@
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
-                            background: #fff;
+                            background: none; /* Remove background color */
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
                         .swiper-slide img {
-                          width: 100%; /* Reduce image size to 100% */
+                            width: 50%; /* Reduce image size to 50% */
+                            margin: 0 auto; /* Center the images */
                         }
                     </style>
 
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="image/4_Hollywood_facing_crop_resized.jpg" alt="Photo 1"></div>
-                            <div class="swiper-slide"><img src="image/6_Beverly_crop_resized.jpg" alt="Photo 2"></div>
-                            <div class="swiper-slide"><img src="image/9_Sea_hand_crop_resized.jpg" alt="Photo 3"></div>
-                            <div class="swiper-slide"><img src="image/10_Sea_Kiss_crop_resized.jpg" alt="Photo 4"></div>
+                            <div class="swiper-slide"><img src="image/4_Hollywood_facing_crop.jpg" alt="Photo 1"></div>
+                            <div class="swiper-slide"><img src="image/6_Beverly_crop.jpg" alt="Photo 2"></div>
+                            <div class="swiper-slide"><img src="image/9_Sea_hand_crop.jpg" alt="Photo 3"></div>
+                            <div class="swiper-slide"><img src="image/10_Sea_Kiss_crop.jpg" alt="Photo 4"></div>
                         </div>
                         <!-- Remove Pagination -->
                     </div>
