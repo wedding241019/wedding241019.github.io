@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gowun+Dodum&family=Molengo&family=PT+Serif+Caption:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bree+Serif&family=Crete+Round:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Gowun+Dodum&family=Molengo&family=Oswald:wght@200..700&family=PT+Serif+Caption:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2828f7885a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
@@ -40,8 +40,8 @@
       .gowun-font {
         font-family: 'Gowun Dodum', sans-serif; /* Add this class for font family */
       }
-      .pt-serif-font {
-        font-family: 'PT Serif Caption', sans-serif; /* Add this class for PT Serif Caption font */
+      .roboto-slab-font {
+        font-family: 'Roboto Slab', sans-serif; /* Add this class for Roboto Slab font */
         font-size: 4.5em; /* Set the font size */
       }
       .small-font {
@@ -54,6 +54,35 @@
         background-image: url('image/10_Sea_Kiss_intro2.jpg'); /* Set the hero background image */
         background-size: cover;
         background-position: center;
+      }
+      .swiper-slide img {
+        width: 75%; /* Reduce image size to 75% */
+        margin: 0 auto; /* Center the images */
+      }
+      .swiper-slide {
+        background: none; /* Remove the white background */
+      }
+      .nama-lengkap {
+        font-size: 2em; /* Adjust the font size as needed */
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        padding: 0; /* Remove padding in swiper container */
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: none; /* Remove background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; /* Remove gap between slides */
+        padding: 0; /* Remove padding around slides */
+      }
+      .swiper-slide img {
+        width: 50%; /* Reduce image size to 50% */
+        margin: 0; /* Center the images */
       }
     </style>
   </head>
@@ -117,7 +146,7 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="subtitle">Wedding Invitation</h1>
-            <h2 class="pt-serif-font">Hyonggyu & Dasom</h2> <!-- Apply PT Serif Caption font here -->
+            <h2 class="roboto-slab-font">Hyonggyu & Dasom</h2> <!-- Apply Roboto Slab font here -->
           <h4 class="subtitle tempatwaktu">
               
                 2024.10.19. PM 18:00
@@ -207,8 +236,7 @@
         
         <div data-aos="fade-up" data-aos-easing="linear">
         <div class="nama-lengkap">
-    초대합니다
-    </p>
+    <p class="nama-lengkap">초대합니다</p>
         </div>
         <div class="main-content">
             <span class="space40px"></span>
