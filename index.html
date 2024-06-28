@@ -70,6 +70,12 @@
       .text-color {
         color: #BC8887; /* Text color for 시간 */
       }
+      .small-title {
+        font-size: 1.5em; /* Smaller font size for 시간 */
+      }
+      .spacing {
+        margin-top: 20px; /* Add spacing between 시간 and 토요일 */
+      }
     </style>
   </head>
 
@@ -233,7 +239,8 @@
   <div class="container">
 
     <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-      <h1 class="title has-text-centered" style="color: #BC8887;">시간</h1> <!-- Apply text color here -->
+      <h1 class="title has-text-centered text-color small-title">시간</h1> <!-- Smaller font size and text color for 시간 -->
+      <div class="spacing"></div> <!-- Add spacing between 시간 and 토요일 -->
     </div>
     <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
       <div class="column is-4 has-vertically-aligned-content">
