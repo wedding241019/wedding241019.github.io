@@ -85,6 +85,12 @@
       .small-text {
         font-size: 0.7em; /* Smaller font size for 탑승위치 */
       }
+      .half-gap {
+        margin-bottom: 10px; /* Reduce the gap between sections to half */
+      }
+      .extra-gap {
+        margin-top: 10px; /* Add a small gap below the title */
+      }
     </style>
   </head>
 
@@ -367,7 +373,7 @@
           
  <!-- Begin Tentang Sherly and Daeng -->
                 <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
-                    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="column is-12 regular-section half-gap" data-aos="fade-up" data-aos-easing="linear">
                         <h1 class="title has-text-centered text-color small-title">포토갤러리</h1> <!-- Apply smaller font size and text color for 포토갤러리 -->
                     </div>
 
@@ -392,15 +398,12 @@
                             height: 10.5cm; /* Increase height by 1.5x */
                             object-fit: cover; /* Ensure image covers the entire area */
                         }
-                        .gap-reduced {
-                            margin-bottom: 20px; /* Reduce the gap between sections */
-                        }
                         .gap-added {
-                            margin-top: 20px; /* Add gap below the title */
+                            margin-top: 10px; /* Add gap below the title */
                         }
                     </style>
 
-                    <div class="swiper-container gap-reduced">
+                    <div class="swiper-container gap-added">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="image/4_Hollywood_facing_crop.jpg" alt="Photo 1"></div>
                             <div class="swiper-slide"><img src="image/6_Beverly_crop.jpg" alt="Photo 2"></div>
